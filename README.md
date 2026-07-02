@@ -9,6 +9,7 @@ Exercícios e projetos em linguagem Python usados nas aulas do curso "Python" da
 
 ## Badges
 ![Licença](https://img.shields.io/github/license/GiovanniJorge/python-mimo?style=flat-square)
+![Projetos](https://img.shields.io/badge/quantidade-8%20projetos-blue?style=flat-square)
 
 ## Sumário
 - [Visão geral](#visão-geral)
