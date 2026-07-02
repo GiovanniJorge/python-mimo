@@ -1,4 +1,5 @@
 # Python - Mimo
+
 Exercícios e projetos em linguagem Python usados nas aulas do curso "Python" da Mimo — coleção organizada com foco em aprendizagem prática de conceitos fundamentais. Ideal para estudantes que querem aprender ou consolidar conhecimentos em Python.
 
 ## Conteúdo principal
@@ -7,13 +8,13 @@ Exercícios e projetos em linguagem Python usados nas aulas do curso "Python" da
 - Exemplos claros com documentação em comentários e instruções de uso.
 
 ## Badges
-- Licença: MIT (ver arquivo LICENSE)
+![Licença](https://img.shields.io/github/license/GiovanniJorge/python-mimo?style=flat-square)
 
 ## Sumário
 - [Visão geral](#visão-geral)
 - [Estrutura do repositório](#estrutura-do-repositório)
+- [Destaques do repositório](#destaques-do-repositório)
 - [Como executar](#como-executar)
-- [Boas práticas / recomendações](#boas-práticas--recomendações)
 - [Contribuindo](#contribuindo)
 - [Licença](#licença)
 - [Autor / Contato](#autor--contato)
@@ -24,113 +25,72 @@ Este repositório organiza pequenos programas e projetos em Python que exemplifi
 Os projetos variam em complexidade, desde jogos interativos até sistemas de gerenciamento, permitindo aprender progressivamente.
 
 ## Estrutura do repositório
-```
-.
+Top-level:
+```text
 ├── .gitattributes
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-└── projetos-gerais/                    — Projetos e exercícios diversos
-    ├── draw-a-card.py                 — Projeto: Sorteia uma carta de baralho
-    ├── food-order-system.py           — Projeto: Sistema de pedidos de comida
-    ├── library.py                     — Projeto: Gerenciador de biblioteca
-    ├── questions-bot.py               — Projeto: Bot respondedor de perguntas
-    ├── rock-paper-scissors-bot.py     — Projeto: Jogo de Pedra, Papel, Tesoura
-    ├── todo-list.py                   — Projeto: Lista de tarefas (To-Do List)
-    └── transaction-analyzer.py        — Projeto: Analisador de transações financeiras
+└── projetos-gerais/            # Projetos e exercícios diversos desenvolvidos no curso
+    ├── draw-a-card.py          # Sorteia uma carta de baralho
+    ├── food-order-system.py    # Sistema de pedidos de comida
+    ├── library.py              # Gerenciador de biblioteca
+    ├── questions-bot.py        # Bot respondedor de perguntas
+    ├── rock-paper-scissors-bot.py # Jogo de Pedra, Papel, Tesoura
+    ├── todo-list.py            # Lista de tarefas (To-Do List)
+    └── transaction-analyzer.py # Analisador de transações financeiras
 ```
 
-Como se encaixa:
-- Cada arquivo `.py` é um programa independente (exercício ou projeto). A forma usual de usar o repositório é executar o arquivo que você quer testar.
-- Os projetos são autoexplicativos e geralmente incluem interação via terminal (input/output).
-- Cada projeto implementa conceitos específicos de Python (funções, dicionários, listas, laços, condicionais, etc.).
+### Como se encaixa:
+- O repositório abriga uma variedade de scripts e ferramentas independentes criados ao longo do curso.
+- Cada arquivo `.py` funciona como um programa executável autônomo. A dinâmica comum de uso consiste em disparar o arquivo desejado diretamente pelo terminal, interagindo com as entradas e saídas (I/O) nativas do console.
+
+## Destaques do repositório
+
+### Food Order System
+* **Descrição:** Fluxo interativo baseado em terminal para montagem e cálculo de combos em um restaurante virtual.
+* **Conceitos:** Condicionais, laços de repetição e manipulação de listas.
+
+### Library Manager
+* **Descrição:** Pequeno gerenciador capaz de controlar acervos de livros, estados de empréstimos e registros de usuários.
+* **Conceitos:** Dicionários (dicts), funções e persistência volátil em memória.
+
+### Transaction Analyzer
+* **Descrição:** Script utilitário voltado ao processamento de listas financeiras para extração de médias, maiores despesas e balanços consolidados.
+* **Conceitos:** Estruturas de dados complexas, list comprehensions e funções built-in.
 
 ## Como executar
 
 ### Pré-requisitos
-- Python 3.6 ou superior instalado em sua máquina.
-- Um terminal ou prompt de comando.
+- **Python** (v3.6 ou superior instalado)
+- Terminal de comandos ou prompt configurado no path global
 
-### Executar um projeto
-Para executar qualquer um dos projetos, navegue até o diretório e use:
+### Passos para execução
 
+1. **Clone o repositório:**
 ```bash
-python nome_do_arquivo.py
+git clone [https://github.com/GiovanniJorge/python-mimo.git](https://github.com/GiovanniJorge/python-mimo.git)
+cd python-mimo
 ```
 
-Exemplos:
-
+2. **Execute o script desejado diretamente pelo interpretador (Exemplo com o Pedra, Papel, Tesoura):**
 ```bash
-# Executar o jogo de Pedra, Papel, Tesoura
 python projetos-gerais/rock-paper-scissors-bot.py
-
-# Executar o sistema de pedidos
-python projetos-gerais/food-order-system.py
-
-# Executar a lista de tarefas
-python projetos-gerais/todo-list.py
 ```
 
-### Verificar a versão do Python
-```bash
-python --version
-```
-
-Se o comando não funcionar, tente:
-```bash
-python3 --version
-```
-
-## Boas práticas / recomendações
-
-### Desenvolvimento
-- Use nomes descritivos para variáveis e funções.
-- Mantenha o código limpo e legível com espaçamento adequado.
-- Documente cada projeto no topo do arquivo com comentários explicando:
-  - O objetivo do programa
-  - Como executá-lo
-  - Exemplo de entrada/saída esperada
-
-### Execução
-- Sempre teste o código antes de fazer commit.
-- Verifique se o código é compatível com Python 3.6+.
-- Para debugging, use `print()` estrategicamente ou ferramentas como `pdb`.
-
-### Padrões de código
-- Siga a convenção PEP 8 para nomenclatura e formatação.
-- Use comentários para explicar lógica complexa.
-- Prefira nomes de arquivos em minúsculas com hífens (ex: `rock-paper-scissors.py`) para compatibilidade.
-
-### Validação opcional
-- Considere usar `flake8` ou `pylint` para verificar qualidade do código:
-  ```bash
-  pip install flake8
-  flake8 projetos-gerais/
-  ```
+> **Nota:** Caso o seu sistema possua aliases diferentes mapeados, você pode precisar forçar a execução chamando explicitamente por `python3 projetos-gerais/rock-paper-scissors-bot.py`. Para checar seu ambiente atual, execute `python --version`.
 
 ## Contribuindo
-Contribuições são bem-vindas (ex.: novos projetos, melhorias, correções, testes). Fluxo sugerido:
+Contribuições são bem-vistas! Se deseja adicionar um novo jogo de terminal ou otimizar rotinas de list comprehensions, siga os passos abaixo:
 
-1. Fork do repositório.
-2. Criar branch com nome descritivo: `feature/novo-projeto` ou `fix/correcao-nome`.
-3. Fazer commits atômicos com mensagens claras.
-4. Abrir Pull Request descrevendo as mudanças e, se aplicável, o conceito Python explorado.
-5. Se possível, inclua:
-   - Uma breve descrição do projeto no topo do arquivo.
-   - Exemplos de entrada/saída esperada.
-   - Comentários explicando trechos de código importantes.
-
-Sugestões adicionais:
-- Se adicionar novo tipo de projeto, organize em subpastas temáticas (ex: `jogos/`, `sistemas/`, `analise-dados/`).
-- Adicione um pequeno comentário no topo de cada novo arquivo explicando seu propósito.
-
-## Testes e automação (opcional)
-- Considere adicionar um `Makefile` com targets como `make test`, `make lint`, `make run`.
-- Para verificação automática, adicionar um workflow (GitHub Actions) que valida cada `.py` com `python -m py_compile` para garantir sintaxe correta.
+1. Faça um **Fork** do repositório.
+2. Crie uma branch com nome descritivo: `feature/novo-projeto` ou `fix/correcao-nome`.
+3. Faça commits atômicos com mensagens claras e objetivas seguindo as diretrizes da comunidade.
+4. Abra um **Pull Request** detalhando as alterações implementadas.
 
 ## Licença
-Este repositório utiliza a licença MIT — consulte o arquivo `LICENSE` na raiz.
+Este repositório utiliza a licença MIT — consulte o arquivo [LICENSE](LICENSE) na raiz.
 
 ## Autor / Contato
-Autor: Giovanni Jorge  
-Repositório: https://github.com/GiovanniJorge/python-mimo
+- **Autor:** Giovanni Jorge  
+- **Repositório:** [https://github.com/GiovanniJorge/python-mimo](https://github.com/GiovanniJorge/python-mimo)
