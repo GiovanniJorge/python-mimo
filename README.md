@@ -32,14 +32,14 @@ Top-level:
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-└── projetos-gerais/            # Projetos e exercícios diversos desenvolvidos no curso
-    ├── draw-a-card.py          # Sorteia uma carta de baralho
-    ├── food-order-system.py    # Sistema de pedidos de comida
-    ├── library.py              # Gerenciador de biblioteca
-    ├── questions-bot.py        # Bot respondedor de perguntas
-    ├── rock-paper-scissors-bot.py # Jogo de Pedra, Papel, Tesoura
-    ├── todo-list.py            # Lista de tarefas (To-Do List)
-    └── transaction-analyzer.py # Analisador de transações financeiras
+└── projetos-gerais/                   # Projetos e exercícios diversos desenvolvidos no curso
+    ├── draw-a-card.py                 # Sorteia uma carta de baralho
+    ├── food-order-system.py           # Sistema de pedidos de comida
+    ├── library.py                     # Gerenciador de biblioteca
+    ├── questions-bot.py               # Bot respondedor de perguntas
+    ├── rock-paper-scissors-bot.py     # Jogo de Pedra, Papel, Tesoura
+    ├── todo-list.py                   # Lista de tarefas (To-Do List)
+    └── transaction-analyzer.py        # Analisador de transações financeiras
 ```
 
 ### Como se encaixa:
