@@ -1,9 +1,11 @@
 # Python - Mimo
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/status-concluído-brightgreen)](#)
-[![Licença](https://img.shields.io/badge/Licença-MIT-blue?logo=github&logoColor=white)](LICENSE)
-[![Projetos](https://img.shields.io/badge/Projetos-7-4A90E2?logo=github&logoColor=white)](https://github.com/GiovanniJorge/python-mimo)
+<p align="center">
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python"></a>
+    <a href="#"><img src="https://img.shields.io/badge/status-concluído-brightgreen" alt="Status"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/Licença-MIT-blue?logo=github&logoColor=white" alt="Licença"></a>
+    <a href="https://github.com/GiovanniJorge/python-mimo"><img src="https://img.shields.io/badge/Projetos-7-4A90E2?logo=github&logoColor=white" alt="Projetos"></a>
+</p>
 
 ## Sumário
 
