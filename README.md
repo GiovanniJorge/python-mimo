@@ -1,97 +1,184 @@
 # Python - Mimo
 
-Exercícios e projetos em linguagem Python usados nas aulas do curso "Python" da Mimo — coleção organizada com foco em aprendizagem prática de conceitos fundamentais. Ideal para estudantes que querem aprender ou consolidar conhecimentos em Python.
-
-## Conteúdo principal
-- Exercícios focados em problemas didáticos para aprendizagem de Python.
-- Projetos práticos que exploram conceitos como lógica de programação, estruturas de dados e interação com o usuário.
-- Exemplos claros com documentação em comentários e instruções de uso.
-
-## Badges
-![Licença](https://img.shields.io/github/license/GiovanniJorge/python-mimo?style=flat-square)
-![Projetos](https://img.shields.io/badge/quantidade-7%20projetos-blue?style=flat-square)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/status-concluído-brightgreen)](#)
+[![Licença](https://img.shields.io/badge/Licença-MIT-blue?logo=github&logoColor=white)](LICENSE)
+[![Projetos](https://img.shields.io/badge/Projetos-7-4A90E2?logo=github&logoColor=white)](https://github.com/GiovanniJorge/python-mimo)
 
 ## Sumário
-- [Visão geral](#visão-geral)
-- [Estrutura do repositório](#estrutura-do-repositório)
-- [Destaques do repositório](#destaques-do-repositório)
-- [Como executar](#como-executar)
-- [Contribuindo](#contribuindo)
+
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Estrutura do Repositório](#estrutura-do-repositório)
+- [Como Executar Localmente](#como-executar-localmente)
+- [Uso e Exemplos](#uso-e-exemplos)
+- [Troubleshooting / FAQ](#troubleshooting--faq)
+- [Contribuição](#contribuição)
+- [Autor](#autor)
 - [Licença](#licença)
-- [Autor / Contato](#autor--contato)
 
-## Visão geral
-Este repositório organiza pequenos programas e projetos em Python que exemplificam conceitos da linguagem e resolução de problemas práticos. Cada arquivo `.py` normalmente resolve um exercício específico ou implementa um projeto completo, e está escrito de forma didática com comentários explicativos.
+## Descrição do Projeto
 
-Os projetos variam em complexidade, desde jogos interativos até sistemas de gerenciamento, permitindo aprender progressivamente.
+Este repositório reúne uma coleção de exercícios e pequenos projetos em Python desenvolvidos durante o curso “Python” da Mimo. O objetivo principal é praticar conceitos fundamentais da linguagem por meio de scripts simples, interativos e didáticos, com foco em lógica de programação, estruturas de dados e uso do terminal.
 
-## Estrutura do repositório
-Top-level:
+Os arquivos presentes neste projeto abordam temas como processamento de entradas do usuário, manipulação de listas, criação de jogos e sistemas de console. Cada script é autônomo, fácil de compreender e pode ser executado diretamente pelo interpretador Python, tornando o material útil tanto para aprendizado quanto para revisão de conceitos básicos.
+
+## Estrutura do Repositório
+
+A organização do projeto é simples e direta:
+
 ```text
-├── .gitattributes
-├── .gitignore
+python-mimo/
 ├── LICENSE
 ├── README.md
-└── projetos-gerais/                   # Projetos e exercícios diversos desenvolvidos no curso
-    ├── draw-a-card.py                 # Sorteia uma carta de baralho
-    ├── food-order-system.py           # Sistema de pedidos de comida
-    ├── library.py                     # Gerenciador de biblioteca
-    ├── questions-bot.py               # Bot respondedor de perguntas
-    ├── rock-paper-scissors-bot.py     # Jogo de Pedra, Papel, Tesoura
-    ├── todo-list.py                   # Lista de tarefas (To-Do List)
-    └── transaction-analyzer.py        # Analisador de transações financeiras
+├── .gitignore
+├── .gitattributes
+└── projetos-gerais/
+    ├── draw-a-card.py
+    ├── food-order-system.py
+    ├── library.py
+    ├── questions-bot.py
+    ├── rock-paper-scissors-bot.py
+    ├── todo-list.py
+    └── transaction-analyzer.py
 ```
 
-### Como se encaixa:
-- O repositório abriga uma variedade de scripts e ferramentas independentes criados ao longo do curso.
-- Cada arquivo `.py` funciona como um programa executável autônomo. A dinâmica comum de uso consiste em disparar o arquivo desejado diretamente pelo terminal, interagindo com as entradas e saídas (I/O) nativas do console.
+### Explicação dos principais diretórios e arquivos
 
-## Destaques do repositório
+- `projetos-gerais/`: contém os scripts Python do repositório, cada um com um objetivo específico e independente.
+- `README.md`: documentação principal do projeto.
+- `LICENSE`: texto da licença MIT do repositório.
+- `draw-a-card.py`: simula o sorteio de cartas de baralho.
+- `food-order-system.py`: sistema interativo de pedidos de comida no terminal.
+- `library.py`: exercício de gerenciamento de biblioteca e livros.
+- `questions-bot.py`: chatbot simples com perguntas e respostas.
+- `rock-paper-scissors-bot.py`: jogo de pedra, papel e tesoura contra o computador.
+- `todo-list.py`: lista de tarefas interativa.
+- `transaction-analyzer.py`: análise básica de transações financeiras.
 
-### Food Order System
-* **Descrição:** Fluxo interativo baseado em terminal para montagem e cálculo de combos em um restaurante virtual.
-* **Conceitos:** Condicionais, laços de repetição e manipulação de listas.
+### Fluxo de trabalho
 
-### Library Manager
-* **Descrição:** Pequeno gerenciador capaz de controlar acervos de livros, estados de empréstimos e registros de usuários.
-* **Conceitos:** Dicionários (dicts), funções e persistência volátil em memória.
+O fluxo do projeto é bem simples: o usuário escolhe o script desejado e executa o arquivo com Python no terminal. Cada script recebe entradas do usuário por meio de `input()`, processa lógica interna e gera saídas no console. Não existe camada de banco de dados, API ou frontend; a comunicação é direta com o ambiente do terminal.
 
-### Transaction Analyzer
-* **Descrição:** Script utilitário voltado ao processamento de listas financeiras para extração de médias, maiores despesas e balanços consolidados.
-* **Conceitos:** Estruturas de dados complexas, list comprehensions e funções built-in.
-
-## Como executar
+## Como Executar Localmente
 
 ### Pré-requisitos
-- **Python** (v3.6 ou superior instalado)
-- Terminal de comandos ou prompt configurado no path global
 
-### Passos para execução
+- Python 3.8 ou superior
+- Terminal ou prompt de comando
+- Git (opcional, para clonar o repositório)
 
-1. **Clone o repositório:**
+### Configuração de Ambiente
+
+Este projeto não utiliza arquivos `.env`, variáveis de ambiente ou dependências externas. A execução depende apenas da instalação do Python e do terminal do sistema operacional.
+
+### Instalação
+
+1. Clone o repositório:
+
 ```bash
-git clone [https://github.com/GiovanniJorge/python-mimo.git](https://github.com/GiovanniJorge/python-mimo.git)
+git clone https://github.com/GiovanniJorge/python-mimo.git
 cd python-mimo
 ```
 
-2. **Execute o script desejado diretamente pelo interpretador (Exemplo com o Pedra, Papel, Tesoura):**
+2. Verifique se o Python está instalado:
+
+```bash
+python --version
+```
+
+Se o comando não for reconhecido, teste:
+
+```bash
+python3 --version
+```
+
+### Execução
+
+Cada script pode ser executado diretamente:
+
 ```bash
 python projetos-gerais/rock-paper-scissors-bot.py
 ```
 
-> **Nota:** Caso o seu sistema possua aliases diferentes mapeados, você pode precisar forçar a execução chamando explicitamente por `python3 projetos-gerais/rock-paper-scissors-bot.py`. Para checar seu ambiente atual, execute `python --version`.
+Exemplos:
 
-## Contribuindo
-Contribuições são bem-vistas! Se deseja adicionar um novo jogo de terminal ou otimizar rotinas de list comprehensions, siga os passos abaixo:
+```bash
+python projetos-gerais/draw-a-card.py
+python projetos-gerais/food-order-system.py
+python projetos-gerais/library.py
+python projetos-gerais/todo-list.py
+python projetos-gerais/transaction-analyzer.py
+```
 
-1. Faça um **Fork** do repositório.
-2. Crie uma branch com nome descritivo: `feature/novo-projeto` ou `fix/correcao-nome`.
-3. Faça commits atômicos com mensagens claras e objetivas seguindo as diretrizes da comunidade.
-4. Abra um **Pull Request** detalhando as alterações implementadas.
+> Em alguns ambientes Windows, o comando pode ser `py` em vez de `python`.
+
+## Uso e Exemplos
+
+Após iniciar um script, o programa geralmente solicita entradas pelo terminal e responde com resultados diretamente no console. A interação é textual e segue o fluxo do próprio programa.
+
+### Exemplos de uso
+
+- Jogo de cartas:
+  - execute `draw-a-card.py`
+  - informe quantas cartas deseja receber
+
+- Sistema de pedidos:
+  - execute `food-order-system.py`
+  - escolha o tipo de comida e o prato desejado
+
+- Lista de tarefas:
+  - execute `todo-list.py`
+  - adicione, remova ou visualize tarefas
+
+- Jogo Pedra, Papel e Tesoura:
+  - execute `rock-paper-scissors-bot.py`
+  - escolha entre pedra, papel ou tesoura
+
+## Troubleshooting / FAQ
+
+### 1. O comando `python` não é reconhecido
+Tente usar:
+
+```bash
+python3 --version
+```
+
+ou, no Windows:
+
+```bash
+py --version
+```
+
+### 2. O script não inicia corretamente
+Confirme se você está na pasta raiz do projeto e usou o caminho correto do arquivo:
+
+```bash
+python projetos-gerais/nome-do-arquivo.py
+```
+
+### 3. Erro de sintaxe
+Verifique se o arquivo foi salvo corretamente com extensão `.py` e que o código não foi alterado indevidamente.
+
+### 4. Nenhuma dependência externa foi instalada
+Isso é esperado: o projeto usa exclusivamente a biblioteca padrão do Python, então não há instalação adicional de pacotes.
+
+## Contribuição
+
+Contribuições são bem-vindas. Se você quiser colaborar com melhorias, novos exercícios ou ajustes na documentação, siga os passos abaixo:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para a sua mudança:
+   ```bash
+   git checkout -b feature/nova-funcionalidade
+   ```
+3. Faça commits claros e objetivos.
+4. Abra um Pull Request com descrição detalhada das alterações.
+
+## Autor
+
+- Nome: Giovanni Jorge
+- GitHub: [@GiovanniJorge](https://github.com/GiovanniJorge)
 
 ## Licença
-Este repositório utiliza a licença MIT — consulte o arquivo [LICENSE](LICENSE) na raiz.
 
-## Autor / Contato
-- **Autor:** Giovanni Jorge  
-- **Repositório:** [https://github.com/GiovanniJorge/python-mimo](https://github.com/GiovanniJorge/python-mimo)
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` na raiz do repositório para mais detalhes.
